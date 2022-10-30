@@ -1,0 +1,50 @@
+.UserCardBloc {
+display: flex;
+height: 70px;
+width: 300px;
+background-color: wheat;
+align-items: center;
+justify-content: space-between;
+margin-top: -320px;
+}
+
+.UserAvatar {
+height: 60px;
+width: 60px;
+border: none;
+border-radius: 30px;
+margin-left: 5px;
+}
+.UserInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.UserEmail{
+  font-size: 12px;
+}
+.UserInvitedButton {
+  height: 30px;
+  width: 30px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  background: greenyellow;
+  color: black;
+  font-size: 15px;
+  border-radius: 20px;
+  outline: none;
+  transition: 0.2s;
+  margin-right: 5px;
+}
+.UserInvitedButton:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 0 darkgray;
+}
+.UserInvitedButton:active {
+  transform: translateY(-2px);
+  box-shadow: 0 3px 0 darkgray;
+}
