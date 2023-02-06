@@ -17,7 +17,9 @@ const UserCard = ({
       </div>
       <div className="UserInfo">
         <div className="UserNameSurname">
-          <b>{first_name} {last_name}</b>
+          <b>
+            {first_name} {last_name}
+          </b>
         </div>
         <div className="UserEmail">{email}</div>
       </div>

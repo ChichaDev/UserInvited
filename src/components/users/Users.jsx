@@ -1,7 +1,7 @@
 import React from "react";
 import UserCard from "./UserCard";
 import "./Users.css";
-import SearchLogo from "../Components/SearchLogo.png";
+import SearchLogo from "../../assets/img/SearchLogo.png";
 
 const Users = ({
   items,
@@ -24,24 +24,22 @@ const Users = ({
         <img className="SearchIcon" src={SearchLogo} alt="" />
       </div>
       <div className="UsersPlace">
-        {
-          items
-            .filter((obj) => {
-              const fullName = (obj.first_name + obj.last_name).toLowerCase();
-              return (
-                fullName.includes(searchValue.toLowerCase()) ||
-                obj.email.toLowerCase().includes(searchValue.toLowerCase())
-              );
-            })
-            .map((obj) => (
-              <UserCard
-                isInvited={invites.includes(obj.id)}
-                onClickInvite={onClickInvite}
-                key={obj.id}
-                {...obj}
-              />
-            )) //спредим все свойтсва obj в компонент
-        }
+        {items
+          .filter((obj) => {
+            const fullName = (obj.first_name + obj.last_name).toLowerCase();
+            return (
+              fullName.includes(searchValue.toLowerCase()) ||
+              obj.email.toLowerCase().includes(searchValue.toLowerCase())
+            );
+          })
+          .map((obj) => (
+            <UserCard
+              isInvited={invites.includes(obj.id)}
+              onClickInvite={onClickInvite}
+              key={obj.id}
+              {...obj}
+            />
+          ))}
       </div>
       <div>
         {invites.length > 0 && (

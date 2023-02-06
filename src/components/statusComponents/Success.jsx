@@ -1,6 +1,6 @@
 import React from "react";
 import "./Success.css";
-import SuccessLogo from "../Components/SuccessLogo.svg.png";
+import SuccessLogo from "../../assets/img/SuccessLogo.svg.png";
 
 const Success = ({ count }) => {
   return (

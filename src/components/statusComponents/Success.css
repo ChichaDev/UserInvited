@@ -13,28 +13,27 @@
 }
 
 .SuccessImg {
-width: 100px;
-height: 100px;
-margin-top: 30px;
+  width: 100px;
+  height: 100px;
+  margin-top: 30px;
 }
 
-
 .BackButton {
-display: flex;
-height: 30px;
-width: 200px;
-justify-content: center;
-align-items: center;
-cursor: pointer;
-border: none;
-background: orangered;
-color: #fff;
-font-family: Arial;
-font-size: 15px;
-border-radius: 20px;
-outline: none;
-transition: 0.2s;
-margin-bottom: 20px;
+  display: flex;
+  height: 30px;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  background: orangered;
+  color: #fff;
+  font-family: Arial;
+  font-size: 15px;
+  border-radius: 20px;
+  outline: none;
+  transition: 0.2s;
+  margin-bottom: 20px;
 }
 .BackButton:hover {
   transform: translateY(-5px);

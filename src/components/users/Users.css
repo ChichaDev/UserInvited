@@ -11,7 +11,7 @@
   margin-left: 20px;
 }
 
-.UsersPlace{
+.UsersPlace {
   display: flex;
   margin-top: 320px;
   height: 100px;
@@ -41,16 +41,14 @@
   font-size: 14px;
   color: #74737c;
 }
-::placeholder{
+::placeholder {
   color: #807878;
 }
 
 .SearchIcon {
   width: 20px;
   height: 20px;
-  
 }
-
 
 .InvitedUsersButton {
   display: flex;
